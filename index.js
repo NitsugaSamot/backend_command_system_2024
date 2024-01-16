@@ -21,7 +21,7 @@ app.use(express.json())
 db()
 
 // Configurar CORS
-const whitelist = [process.env.FRONTEND_URL, process.env.FRONTEND_LOCAL];
+const whitelist = [process.env.FRONTEND_URL, process.env.FRONTEND_LOCAL, process.env.FRONTEND_URL_TWO, process.env.FRONTEND_URL_THREE ];
 
 
 const corsOptions = {
