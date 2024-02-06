@@ -7,7 +7,6 @@ import menuRoutes from './routes/menuRoutes.js'
 import commandRoutes from './routes/commandRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 
-
 //Variables de entorno
 dotenv.config()
 
@@ -39,7 +38,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions))
 
-//Definir ruta
+// //Definir ruta
 app.use('/api/menu', menuRoutes)
 app.use('/api/command', commandRoutes)
 app.use('/api/auth', userRoutes)
